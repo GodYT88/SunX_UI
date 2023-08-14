@@ -3226,7 +3226,7 @@ function Library:CreateWindow(...)
             });
 
             local GroupboxLabel = Library:CreateLabel({
-                Size = UDim2.new(1, 0, 0, 9);
+                Size = UDim2.new(1, 0, 0, 18);
                 Position = UDim2.new(0, 4, 0, 2);
                 TextSize = 14;
                 Text = Info.Name;
@@ -3238,7 +3238,7 @@ function Library:CreateWindow(...)
             local Container = Library:Create('Frame', {
                 BackgroundTransparency = 1;
                 Position = UDim2.new(0, 4, 0, 20);
-                Size = UDim2.new(1, -4, 1, -10);
+                Size = UDim2.new(1, -4, 1, -20);
                 ZIndex = 1;
                 Parent = BoxInner;
             });
@@ -3258,7 +3258,7 @@ function Library:CreateWindow(...)
                     end;
                 end;
 
-                BoxOuter.Size = UDim2.new(1, 0, 0, 10 + Size + 2 + 2);
+                BoxOuter.Size = UDim2.new(1, 0, 0, 20 + Size + 2 + 2);
             end;
 
             Groupbox.Container = Container;
