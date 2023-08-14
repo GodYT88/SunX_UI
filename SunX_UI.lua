@@ -1052,7 +1052,11 @@ do
         function KeyPicker:OnClick(Callback)
             KeyPicker.Clicked = Callback
         end
-
+        
+        function KeyPicker:OnChanged(Callback)
+            KeyPicker.Changed = Callback
+            Callback(KeyPicker.Value)
+        end
 
         if ParentObj.Addons then
             table.insert(ParentObj.Addons, KeyPicker)
